@@ -1,24 +1,24 @@
 
 
 class Node:
-    def __init__(self, data):
-        self.data = data
-        self.left = None
-        self.right = None
+    def __init__(self: object, data: None) -> None:
+        self.data: None = data
+        self.left: str = None
+        self.right: str = None
         
-    def __str__(self) -> str:
+    def __str__(self: object) -> str:
         return str(self.data)
         
 class BinaryTree:
-    def __init__(self, data=None):
+    def __init__(self: object, data=None) -> None:
         if data:
-            node = Node(data)
+            node: str = Node(data)
             self.root = node
         else:
             self.root = None
     
     # percurso de ordem simetrica
-    def simetric_traversal(self, node=None):
+    def simetric_traversal(self: object, node: None=None) -> Node:
         if node is None:
             node = self.root
         if node.left:
@@ -37,16 +37,16 @@ if __name__ == "__main__":
     # print(tree.root)
     # print(tree.root.right)
     # print(tree.root.left)
-    tree = BinaryTree()
-    n1 = Node('a')
-    n2 = Node('+')
-    n3 = Node('*')
-    n4 = Node('b')
-    n5 = Node('-')
-    n6 = Node('/')
-    n7 = Node('c')
-    n8 = Node('d')
-    n9 = Node('e')
+    tree: str = BinaryTree()
+    n1: str = Node('a')
+    n2: str = Node('+')
+    n3: str = Node('*')
+    n4: str = Node('b')
+    n5: str = Node('-')
+    n6: str = Node('/')
+    n7: str = Node('c')
+    n8: str = Node('d')
+    n9: str = Node('e')
     
     n6.left = n7
     n6.right = n8
